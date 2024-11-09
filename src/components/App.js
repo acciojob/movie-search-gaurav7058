@@ -41,7 +41,11 @@ const App = () => {
                 <h1>{item.Title} ({item.Year})</h1>
               </li>
             </ul>
-            <img src={item.Poster} alt={item.Title} />
+            {item.Poster && item.Poster !== "N/A" ? (
+              <img src={item.Poster} alt={item.Title} />
+            ) : (
+              <p>No image available</p>
+            )}
           </div>
         ))}
 
