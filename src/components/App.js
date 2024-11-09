@@ -36,7 +36,9 @@ const App = () => {
                   <li>
                   <h1>{item.Title} ({item.Year})</h1>
                   </li>
+                  <li>
                   <img src={item.Poster} alt="" />
+                  </li>
                 </ul>
             </div>
           )
