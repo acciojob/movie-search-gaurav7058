@@ -23,9 +23,11 @@ const App = () => {
   return (
     <div>
         <div className='container'>
+      <form action="" onClick={(e)=>e.preventDefault()}>
       <h1>Search Movies</h1>
       <input type="text" value={query} onChange={(e)=>setQuery(e.target.value)}></input>
       <button onClick={getApi}>Search</button>
+      </form>
       {
         movies.map((item,id)=>{
           return(
