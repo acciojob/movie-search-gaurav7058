@@ -32,8 +32,12 @@ const App = () => {
         movies.map((item,id)=>{
           return(
             <div className="" key={id}>
-                <h1>{item.Title} ({item.Year})</h1>
-                <img src={item.Poster} alt="" />
+                <ul>
+                  <li>
+                  <h1>{item.Title} ({item.Year})</h1>
+                  </li>
+                  <img src={item.Poster} alt="" />
+                </ul>
             </div>
           )
         })
