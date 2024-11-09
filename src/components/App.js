@@ -34,16 +34,14 @@ const App = () => {
           <button onClick={getApi}>Search</button>
         </form>
 
-        {movies.slice(0, 10).map((item, id) => (
+        {movies.map((item, id) => (
           <div className="movie" key={id}>
             <ul>
               <li>
                 <h1>{item.Title} ({item.Year})</h1>
               </li>
-              <li>
-                <img src={item.Poster} alt={item.Title} />
-              </li>
             </ul>
+            <img src={item.Poster} alt={item.Title} />
           </div>
         ))}
 
